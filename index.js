@@ -11,6 +11,6 @@ app.get('/', (req,res) => {
     res.send(data)
 })
 
-app.get('/data', (req,res) => {
-    res.json(data)
+app.get('/process', (req,res) => {
+    res.json(process.env)
 })
