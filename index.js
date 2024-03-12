@@ -16,3 +16,8 @@ app.get('/', (req,res) => {
 app.get('/env', (req,res) => {
     res.json(process.env.PORT);
 })
+
+//  - Biến process.env còn được dùng để lưu trữ các thông tin cần giữ bí mật trong quá trình phát triển ứng dụng 
+// như username, password của database,....
+// -  khi deploys lên server thì sẽ máy chủ sử dụng process.env.PORT (như render sử dụng cổng 1000)
+ 
