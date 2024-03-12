@@ -14,5 +14,5 @@ app.get('/', (req,res) => {
 })
 
 app.get('/env', (req,res) => {
-    res.json(process.env)
+    res.json(process.env.PORT);
 })
